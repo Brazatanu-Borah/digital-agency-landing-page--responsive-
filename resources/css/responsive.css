@@ -1,0 +1,167 @@
+/* 1200px and up is the regular css styles */
+
+
+/* device-width from 1199px down to 1024px  */
+@media only screen and (max-width: 1199px) {
+  html {
+    font-size: 14px;
+  }
+
+  .about-section p {
+    margin-bottom: 20px;
+  }
+
+  .about-box,
+  .section-heading {
+    margin-top: 90px;
+  }
+
+  .big-icon {
+    margin-bottom: 20px;
+  }
+
+}
+
+/* device-width from 1023px down to 768px  */
+@media only screen and (max-width: 1023px) {
+  html {
+    font-size: 12px;
+  }
+
+  .row {
+    padding: 0 2%;
+  }
+
+  .about-box,
+  .section-heading {
+    margin-top: 60px;
+  }
+
+  .about-box:first-child {
+    padding: 0;
+    padding-left: 5%;
+  }
+
+  .about-box:last-child {
+    padding-right: 5%;
+  }
+
+  .package-box {
+    width: 100%;
+  }
+
+  .package-heading {
+    margin-bottom: 25px;
+  }
+
+  footer {
+    padding: 30px;
+  }
+
+  footer ul li {
+    margin-right: 10px;
+  }
+
+  .social-links li {
+    margin-left: 10px;
+  }
+
+  footer p {
+    margin-top: 20px;
+    line-height: 1.2;
+  }
+
+}
+
+/* device-width from 767px down to 480px  */
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 10px;
+  }
+
+  .logo {
+    height: 80px;
+    margin-top: 20px;
+  }
+
+  .main-nav {
+    margin-top: 40px;
+  }
+
+  .header-text-box {
+    margin-bottom: 50px;
+  }
+
+  .about-section h2 {
+    margin-bottom: 20px;
+  }
+
+  .about-box,
+  .section-heading {
+    margin-top: 40px;
+  }
+
+  .section-heading {
+    margin-bottom: 20px;
+  }
+
+  .section-sub-heading::after {
+    margin-top: 20px;
+  }
+
+  .work-portfolio li {
+    width: 50%;
+  }
+
+  .testimonials-section h2 {
+    margin-bottom: 10px;
+  }
+
+  ul.footer-nav,
+  ul.social-links {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* device-width from 479px down to 0px  */
+@media (max-width: 479px) {
+  .about-box:first-child {
+    text-align: center;
+    padding: 0 10%;
+  }
+
+  .about-box:last-child {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .services-section .span-1-of-4,
+  .partners-section .span-1-of-4 {
+    width: 45%;
+    margin-bottom: 60px;
+  }
+
+  .testimonials-section .span-1-of-3 {
+    padding: 10%;
+  }
+
+  .testimonial-box {
+    margin: 10px 0;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  form input[type="checkbox"] {
+    margin-bottom: 20px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    margin: 10px 0;
+  }
+}

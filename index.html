@@ -11,8 +11,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <!-- Favicon -->
+  <link rel="icon" href="vendor/images/favicons/apple-touch-icon.png">
+  <link rel="icon" href="vendor/images/favicons/favicon-32x32.png">
+  <link rel="icon" href="vendor/images/favicons/favicon-16x16.png">
+  <link rel="icon" href="vendor/images/favicons/site.webmanifest">
+
   <!-- Reset CSS -->
   <link rel="stylesheet" href="vendor/css/reset.css">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="vendor/css/animate.min.css">
 
   <!-- Font Awesome Icons CSS -->
   <link rel="stylesheet" href="vendor/icons/fontawesome/css/all.min.css">
@@ -27,13 +36,13 @@
 
 <body>
 
-  <header>
-    <nav>
+  <header id="header">
+    <nav id="mainTopNav">
       <img src="resources/images/digisolve-logo.png" alt="Digisolve logo" class="logo">
       <ul class="main-nav">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#header">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
     <div class="header-box">
@@ -41,19 +50,19 @@
         <h1>Digital Agency</h1>
         <h2>The one stop for all your digital solutions</h2>
       </div>
-      <a href="#" class="btn btn-full">Get a Quote Today!</a>
+      <a href="#" class="btn btn-full js--scroll-to-contact">Get a Quote Today!</a>
     </div>
   </header>
 
-  <section class="about-section">
+  <section class="about-section js--about-section" id="about">
     <div class="row">
-      <div class="col span-1-of-2 about-box">
+      <div class="col span-1-of-2 about-box js--about-box">
         <h2>A Digital Agency Focused On Growing Your Online Presence</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum. Saepe ipsa enim esse veniam aliquid quia architecto voluptates, vero minus nisi.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum.</p>
         <a href="#" class="btn btn-ghost">READ MORE</a>
       </div>
-      <div class="col span-1-of-2 about-box">
+      <div class="col span-1-of-2 about-box js--about-box">
         <img src="resources/images/about-img.jpg" alt="Digisolve about" class="about-img">
       </div>
     </div>
@@ -94,31 +103,31 @@
   </section>
 
   <!-- SERVICES SECTION -->
-  <section class="services-section">
+  <section class="services-section js--services-section">
     <div class="row">
       <h2 class="section-heading">Our Services</h2>
       <h3 class="section-sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit numquam.</h3>
     </div>
     <div class="row">
-      <div class="col span-1-of-4 service-box">
+      <div class="col span-1-of-4 service-box js--service-box">
         <i class="fa-solid fa-tags big-icon"></i>
         <h4 class="service-heading">Branding</h4>
         <p class="service-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa aut aspernatur nemo suscipit labore.</p>
         <a href="#" class="service-link">READ MORE...</a>
       </div>
-      <div class="col span-1-of-4 service-box">
+      <div class="col span-1-of-4 service-box js--service-box">
         <i class="fa-solid fa-pen-alt big-icon"></i>
         <h4 class="service-heading">Content</h4>
         <p class="service-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa aut aspernatur nemo suscipit labore.</p>
         <a href="#" class="service-link">READ MORE...</a>
       </div>
-      <div class="col span-1-of-4 service-box">
+      <div class="col span-1-of-4 service-box js--service-box">
         <i class="fa-solid fa-funnel-dollar big-icon"></i>
         <h4 class="service-heading">Marketing</h4>
         <p class="service-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa aut aspernatur nemo suscipit labore.</p>
         <a href="#" class="service-link">READ MORE...</a>
       </div>
-      <div class="col span-1-of-4 service-box">
+      <div class="col span-1-of-4 service-box js--service-box">
         <i class="fa-solid fa-code big-icon"></i>
         <h4 class="service-heading">Web Design</h4>
         <p class="service-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa aut aspernatur nemo suscipit labore.</p>
@@ -191,7 +200,7 @@
   </section>
 
   <!-- POPULAR PACKAGES SECTION -->
-  <section class="packages-section">
+  <section class="packages-section js--packages-section">
     <div class="row">
       <h2 class="section-heading">Check Out Our Most Popular Packages</h2>
     </div>
@@ -239,7 +248,7 @@
         </div>
       </div>
       <div class="col span-1-of-3">
-        <div class="package-box">
+        <div class="package-box js--enterprise">
           <div>
             <h4 class="package-heading">Enterprise</h4>
             <p class="package-price">$4,999 <span>3 months</span></p>
@@ -263,7 +272,7 @@
   </section>
 
   <!-- CONTACT FORM SECTION -->
-  <section class="contact-form-section">
+  <section class="contact-form-section js--contact" id="contact">
     <div class="row">
       <h2 class="section-heading">We're happy to hear from you</h2>
     </div>
@@ -339,6 +348,10 @@
     </div>
   </footer>
 
+
+  <script src="vendor/js/jquery.min.js"></script>
+  <script src="vendor/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/app.js"></script>
 </body>
 
 </html>
